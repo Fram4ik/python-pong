@@ -1,0 +1,20 @@
+from pygame import *
+window = display.set_mode((1000,550))
+
+back = (0,0,0)
+win_width = 1000
+win_height = 550
+window.fill(back)
+
+run = True 
+clock = time.Clock()
+FPS = 60
+
+while run:
+    for i in event.get():
+        if i.type == QUIT:
+            run = False
+
+
+    display.update()
+    clock.tick(FPS)
